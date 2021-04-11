@@ -35,5 +35,6 @@ export default defineComponent({
 <style scoped>
 .content {
   padding: 5px;
+  width: 100%;
 }
 </style>

@@ -1,11 +1,9 @@
 <template>
-  <div class="p-d-flex p-dir-col p-jc-start">
-    <div>
-      <Menubar :model="menuItems" />
-    </div>
-    <div>
-      <slot></slot>
-    </div>
+  <div class="topbar">
+    <Menubar :model="menuItems" />
+  </div>
+  <div class="chat-content">
+    <slot></slot>
   </div>
 </template>
 
@@ -45,4 +43,19 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+.chat-content {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  height: 100%;
+}
+</style>

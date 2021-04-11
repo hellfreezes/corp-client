@@ -37,7 +37,7 @@ export default defineComponent({
 
 <style scoped>
 .content {
-  width: 15rem;
+  width: 25rem;
   padding: 5px;
   border-right: 1px solid var(--surface-d);
 }
